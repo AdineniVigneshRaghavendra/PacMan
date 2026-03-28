@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://clpc1xk785gut"]
+
+[ext_resource type="Texture2D" uid="uid://h71ud3s8c8n3" path="res://assets/Pacman/Pacman_02.png" id="1_kcrxf"]
+[ext_resource type="Script" uid="uid://slr6lm4025mh" path="res://scripts/pacman.gd" id="1_kjyp3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kcrxf"]
+radius = 7.0
+
+[node name="Player" type="CharacterBody2D" unique_id=850460742]
+script = ExtResource("1_kjyp3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1628318609]
+texture_filter = 1
+scale = Vector2(-1, 1)
+texture = ExtResource("1_kcrxf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1699510174]
+shape = SubResource("CircleShape2D_kcrxf")
