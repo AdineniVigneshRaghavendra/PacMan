@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://h71ud3s8c8n3" path="res://assets/Pacman/Pacman_02.png" id="1_kcrxf"]
 [ext_resource type="Script" uid="uid://slr6lm4025mh" path="res://scripts/pacman.gd" id="1_kjyp3"]
+[ext_resource type="Texture2D" uid="uid://c6bux70f56d6a" path="res://assets/Pacman/direction_pointer.png" id="3_utpjb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kcrxf"]
 radius = 7.0
@@ -16,3 +17,9 @@ texture = ExtResource("1_kcrxf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1699510174]
 shape = SubResource("CircleShape2D_kcrxf")
+
+[node name="DirectionPointer" type="Sprite2D" parent="." unique_id=1459606352]
+texture_filter = 1
+position = Vector2(-9.999999, 0)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_utpjb")
